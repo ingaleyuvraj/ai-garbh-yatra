@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">गर्भयात्रा</string>
+    <string name="app_tagline">तुमच्या गर्भारपणाची शांत सोबत</string>
+
+    <!-- Common -->
+    <string name="common_next">पुढे</string>
+    <string name="common_back">मागे</string>
+    <string name="common_skip">वगळा</string>
+    <string name="common_continue">पुढे चला</string>
+    <string name="common_start">सुरू करूया</string>
+    <string name="common_play">ऐका</string>
+    <string name="common_share">शेअर करा</string>
+    <string name="disclaimer_short">ही माहिती सर्वसाधारण आहे. कृपया तुमच्या डॉक्टरांचा सल्ला घ्या.</string>
+
+    <!-- Onboarding -->
+    <string name="onb_intro1_title">शांत आणि सकारात्मक प्रवास</string>
+    <string name="onb_intro1_sub">रोजची प्रेरणा, ध्यान आणि सुखद संगीतासह तुमचं मन शांत ठेवा.</string>
+    <string name="onb_intro2_title">बाळाशी प्रेमाचा संवाद</string>
+    <string name="onb_intro2_sub">गर्भसंवाद आणि मंत्रांद्वारे तुमच्या बाळाशी जोडलं राहा.</string>
+    <string name="onb_intro3_title">तुमची रोजची सोबत</string>
+    <string name="onb_intro3_sub">पाणी, मन:स्थिती, नोंदी आणि सौम्य दिनचर्या — सगळं एका ठिकाणी.</string>
+    <string name="onb_name_title">तुमचं नाव काय आहे?</string>
+    <string name="onb_name_hint">तुमचं नाव लिहा</string>
+    <string name="onb_name_helper">आम्ही तुम्हाला प्रेमाने हाक मारू शकतो म्हणून.</string>
+    <string name="onb_stage_title">तुम्ही सध्या कोणत्या टप्प्यावर आहात?</string>
+    <string name="onb_stage_helper">यानुसार आम्ही तुमच्यासाठी योग्य मार्गदर्शन देऊ.</string>
+    <string name="stage_planning">गर्भधारणेचे नियोजन</string>
+    <string name="stage_planning_sub">मी / आम्ही बाळासाठी तयारी करत आहोत</string>
+    <string name="stage_t1">पहिली तिमाही</string>
+    <string name="stage_t1_sub">१ ते १३ आठवडे</string>
+    <string name="stage_t2">दुसरी तिमाही</string>
+    <string name="stage_t2_sub">१४ ते २७ आठवडे</string>
+    <string name="stage_t3">तिसरी तिमाही</string>
+    <string name="stage_t3_sub">२८ आठवड्यांपुढे</string>
+    <string name="onb_consent_title">सुरू करण्यापूर्वी एक महत्त्वाची गोष्ट</string>
+    <string name="onb_consent_body">हे app वैद्यकीय सल्ला किंवा निदानासाठी नाही. हे केवळ तुमच्या मनःशांती, सकारात्मकता आणि दैनंदिन सोबतीसाठी आहे. कोणत्याही आरोग्यविषयक लक्षणांसाठी किंवा निर्णयासाठी कृपया तुमच्या डॉक्टरांचा सल्ला घ्या.</string>
+    <string name="onb_consent_check1">मी हे समजून घेतलं आहे आणि सहमत आहे.</string>
+    <string name="onb_consent_check2">मी १८ वर्षांवरील आहे.</string>
+    <string name="onb_consent_cta">सहमत आहे, पुढे चला</string>
+    <string name="onb_ready_cta">आजचा दिवस उघडा</string>
+
+    <!-- Bottom nav -->
+    <string name="nav_today">आजचा दिवस</string>
+    <string name="nav_samvad">गर्भसंवाद</string>
+    <string name="nav_calm">आराम</string>
+    <string name="nav_me">माझे</string>
+    <string name="nav_more">अधिक</string>
+
+    <!-- Today -->
+    <string name="today_greeting_morning">सुप्रभात</string>
+    <string name="today_greeting_afternoon">नमस्कार</string>
+    <string name="today_greeting_evening">शुभ संध्याकाळ</string>
+    <string name="today_affirmation_header">आजची प्रेरणा</string>
+    <string name="today_samvad_header">आजचा गर्भसंवाद</string>
+    <string name="today_breathing">श्वसन</string>
+    <string name="today_music">शांत संगीत</string>
+    <string name="today_routine_header">आजची दिनचर्या</string>
+    <string name="today_tip_header">आजची टीप</string>
+    <string name="today_quick_water">पाणी</string>
+    <string name="today_quick_mood">मन:स्थिती</string>
+    <string name="today_quick_journal">नोंद</string>
+    <string name="today_all_done">आजची दिनचर्या पूर्ण झाली! स्वतःचं कौतुक करा. 💖</string>
+
+    <!-- Samvad -->
+    <string name="samvad_title">गर्भसंवाद</string>
+    <string name="samvad_intro">शांत बसा, दीर्घ श्वास घ्या आणि तुमच्या बाळाशी प्रेमाने बोला.</string>
+
+    <!-- Calm -->
+    <string name="calm_title">आराम</string>
+    <string name="calm_subtitle">तुमच्या मनाला शांती देणारं सगळं इथे आहे.</string>
+    <string name="calm_mantra">मंत्र आणि प्रार्थना</string>
+    <string name="calm_music">शांत संगीत</string>
+    <string name="calm_meditation">ध्यान आणि श्वसन</string>
+
+    <!-- Me / trackers -->
+    <string name="me_title">माझे</string>
+    <string name="water_title">पाण्याची आठवण</string>
+    <string name="water_add">एक ग्लास</string>
+    <string name="water_progress">आज तुम्ही %1$d ग्लास पाणी प्यायलात</string>
+    <string name="water_disclaimer">प्रमाण तुमच्या डॉक्टरांच्या सल्ल्यानुसार ठरवा.</string>
+    <string name="mood_title">आईची मन:स्थिती</string>
+    <string name="mood_prompt">आज तुम्हाला कसं वाटतंय?</string>
+    <string name="mood_happy">आनंदी</string>
+    <string name="mood_calm">शांत</string>
+    <string name="mood_tired">थकलेली</string>
+    <string name="mood_anxious">चिंताग्रस्त</string>
+    <string name="mood_sad">दु:खी</string>
+    <string name="mood_energetic">उत्साही</string>
+    <string name="mood_support">जर सतत उदास वाटत असेल, तर जवळच्या व्यक्तीशी किंवा डॉक्टरांशी बोला. तुम्ही एकट्या नाही. 💖</string>
+    <string name="journal_title">माझी नोंदपुस्तिका</string>
+    <string name="journal_prompt">आज तुम्ही कशाबद्दल कृतज्ञ आहात?</string>
+
+    <!-- More -->
+    <string name="more_title">अधिक</string>
+    <string name="more_diet">आहार मार्गदर्शन</string>
+    <string name="more_partner">जोडीदाराचा सहभाग</string>
+    <string name="more_reminders">स्मरण व्यवस्था</string>
+    <string name="more_offline">ऑफलाइन डाउनलोड</string>
+    <string name="more_safety">तज्ञांची सूचना व सुरक्षा</string>
+    <string name="more_faq">वारंवार विचारले जाणारे प्रश्न</string>
+    <string name="more_settings">सेटिंग्ज</string>
+    <string name="more_privacy">गोपनीयता धोरण</string>
+    <string name="more_premium">गर्भयात्रा प्लस</string>
+    <string name="safety_body">हे app आधार देणारं आहे, डॉक्टरांची जागा घेणारं नाही. कोणत्याही त्रासात तातडीने वैद्यकीय मदत घ्या. हे app कोणतीही लिंग-निवड, अंधश्रद्धा किंवा वैद्यकीय दावे करत नाही.</string>
+
+    <!-- Week chip -->
+    <string name="week_chip_planning">नियोजनाचा प्रवास · दिवस %1$d</string>
+    <string name="day_chip">दिवस %1$d</string>
+
+    <!-- Audio / YouTube -->
+    <string name="audio_listen">ऐका</string>
+    <string name="audio_open_youtube">YouTube वर उघडा</string>
+    <string name="audio_source_note">सर्व ऑडिओ YouTube वरून उघडतं. प्ले केल्यावर ते अधिकृत YouTube अ‍ॅप/संकेतस्थळावर सुरू होईल.</string>
+    <string name="calm_cat_music">शांत संगीत</string>
+    <string name="calm_cat_mantra">मंत्र</string>
+    <string name="calm_cat_prarthana">प्रार्थना</string>
+    <string name="calm_cat_shlok">श्लोक</string>
+    <string name="calm_cat_dhyan">ध्यान आणि श्वसन</string>
+
+    <!-- Stories -->
+    <string name="stories_title">गोष्टींचा खजिना</string>
+    <string name="stories_intro">संस्कार रुजवणाऱ्या प्रेरणादायी गोष्टी — रोज थोडं थोडं बाळासाठी वाचा.</string>
+    <string name="stories_sections">%1$d भाग</string>
+    <string name="story_moral">तात्पर्य</string>
+    <string name="story_section">भाग %1$d</string>
+    <string name="today_story_header">आजची गोष्ट</string>
+    <string name="today_mantra_header">आजचा मंत्र</string>
+    <string name="more_stories">गोष्टींचा खजिना</string>
+
+    <!-- Text-to-speech -->
+    <string name="tts_listen">वाचून दाखवा</string>
+    <string name="tts_stop">थांबवा</string>
+
+    <!-- Care: medications, reminders, doctor visits -->
+    <string name="care_add">जोडा</string>
+    <string name="care_save">जतन करा</string>
+    <string name="care_cancel">रद्द करा</string>
+    <string name="care_delete">काढून टाका</string>
+    <string name="care_reminder_at">स्मरणपत्र: %1$s वाजता</string>
+    <string name="care_no_reminder">स्मरणपत्र बंद</string>
+
+    <string name="care_meds_title">गोळ्या / औषधे</string>
+    <string name="care_meds_subtitle">तुमच्या गोळ्या जोडा आणि रोज घेतल्याची नोंद ठेवा.</string>
+    <string name="care_meds_empty">अजून कोणतीही गोळी जोडलेली नाही. खाली + वर टॅप करा.</string>
+    <string name="care_taken_today">आज घेतली ✓</string>
+    <string name="care_not_taken_today">आज अजून घेतलेली नाही</string>
+    <string name="care_add_med">गोळी जोडा</string>
+    <string name="care_med_name">गोळीचे नाव (उदा. फॉलिक अ‍ॅसिड)</string>
+    <string name="care_reminder_time">स्मरणपत्राची वेळ</string>
+    <string name="care_enable_reminder">रोजचे स्मरणपत्र</string>
+
+    <string name="care_reminders_title">स्मरणपत्रे</string>
+    <string name="care_reminders_subtitle">पाणी, नाश्ता किंवा इतर सवयींसाठी रोजची आठवण ठेवा.</string>
+    <string name="care_reminders_empty">अजून कोणतेही स्मरणपत्र नाही. खाली + वर टॅप करा.</string>
+    <string name="care_add_reminder">स्मरणपत्र जोडा</string>
+    <string name="care_reminder_label">स्मरणपत्राचे नाव</string>
+    <string name="care_reminder_water">पाणी प्या</string>
+    <string name="care_reminder_breakfast">नाश्ता करा</string>
+    <string name="care_reminder_custom">इतर</string>
+
+    <string name="care_visits_title">डॉक्टर भेटी</string>
+    <string name="care_visits_subtitle">आगामी तपासण्या आणि भेटींची नोंद ठेवा.</string>
+    <string name="care_visits_empty">अजून कोणतीही भेट नोंदवलेली नाही. खाली + वर टॅप करा.</string>
+    <string name="care_add_visit">भेट जोडा</string>
+    <string name="care_visit_title">भेटीचे नाव (उदा. नियमित तपासणी)</string>
+    <string name="care_visit_when">तारीख आणि वेळ</string>
+    <string name="care_visit_reason">कारण (ऐच्छिक)</string>
+    <string name="care_visit_reason_label">कारण: %1$s</string>
+    <string name="care_visit_notes">टीप (ऐच्छिक)</string>
+
+    <!-- Data export / import -->
+    <string name="data_title">डेटा बॅकअप</string>
+    <string name="data_subtitle">तुमचा सर्व डेटा एका फाईलमध्ये जतन करा किंवा परत आणा.</string>
+    <string name="data_export">डेटा एक्सपोर्ट करा</string>
+    <string name="data_export_hint">सर्व नोंदी JSON फाईलमध्ये जतन करा.</string>
+    <string name="data_import">डेटा इम्पोर्ट करा</string>
+    <string name="data_import_hint">पूर्वी जतन केलेली फाईल निवडून डेटा परत आणा.</string>
+    <string name="data_export_done">डेटा यशस्वीरित्या एक्सपोर्ट झाला.</string>
+    <string name="data_import_done">डेटा यशस्वीरित्या इम्पोर्ट झाला.</string>
+    <string name="data_error">काहीतरी चूक झाली. कृपया पुन्हा प्रयत्न करा.</string>
+</resources>

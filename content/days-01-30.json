@@ -1,0 +1,487 @@
+{
+  "version": "1.0.0",
+  "lang": "mr",
+  "disclaimer": "ही माहिती सर्वसाधारण आहे. कृपया तुमच्या डॉक्टरांचा सल्ला घ्या.",
+  "days": [
+    {
+      "id": "day_t1_001", "stage": "t1", "dayIndex": 1, "titleMr": "दिवस १", "disclaimerMr": "ही माहिती सर्वसाधारण आहे. कृपया तुमच्या डॉक्टरांचा सल्ला घ्या.",
+      "slots": {
+        "affirmation": { "id": "aff_t1_001", "type": "affirmation", "stage": "t1", "lang": "mr", "bodyMr": "मी शांत आहे, आणि माझ्या आत एक सुंदर सुरुवात होत आहे." },
+        "garbhSamvad": { "id": "gs_t1_001", "type": "garbh_samvad", "stage": "t1", "lang": "mr", "titleMr": "स्वागत", "audioDurationSec": 180, "bodyMr": "माझ्या बाळा, तू आमच्या आयुष्यात येणार आहेस याचा आम्हाला मनापासून आनंद आहे. तू सुरक्षित आहेस." },
+        "meditation": { "id": "med_t1_001", "type": "meditation", "stage": "t1", "lang": "mr", "audioDurationSec": 180, "bodyMr": "हळू श्वास घ्या, ४ मोजा, हळू सोडा. खांदे सैल करा.", "tags": ["breathing"] },
+        "tip": { "id": "tip_t1_001", "type": "tip", "stage": "t1", "lang": "mr", "bodyMr": "दिवसभर थोडं थोडं पाणी प्या. घाई न करता विश्रांती घ्या.", "tags": ["hydration", "rest"] },
+        "partnerTask": { "id": "pt_001", "type": "partner_task", "stage": "t1", "lang": "mr", "bodyMr": "आज आईला एक प्रेमळ शब्द सांगा आणि एक ग्लास पाणी द्या." }
+      },
+      "routine": [
+        { "taskKey": "rt_breathe", "titleMr": "सकाळचे श्वसन", "deepLink": "app://calm/breathing" },
+        { "taskKey": "rt_water", "titleMr": "पाणी प्या", "target": 8, "deepLink": "app://tracker/water" },
+        { "taskKey": "rt_samvad", "titleMr": "गर्भसंवाद", "deepLink": "app://samvad/today" },
+        { "taskKey": "rt_sleep", "titleMr": "रात्री लवकर झोप" }
+      ]
+    },
+    {
+      "id": "day_t1_002", "stage": "t1", "dayIndex": 2, "titleMr": "दिवस २", "disclaimerMr": "ही माहिती सर्वसाधारण आहे. कृपया तुमच्या डॉक्टरांचा सल्ला घ्या.",
+      "slots": {
+        "affirmation": { "id": "aff_t1_002", "type": "affirmation", "stage": "t1", "lang": "mr", "bodyMr": "माझं शरीर शहाणं आहे; ते बाळासाठी योग्य ते करत आहे." },
+        "garbhSamvad": { "id": "gs_t1_002", "type": "garbh_samvad", "stage": "t1", "lang": "mr", "titleMr": "गुणगुणणे", "audioDurationSec": 180, "bodyMr": "बाळा, आज मी तुझ्यासाठी एक शांत गाणं गुणगुणते. तुला ते आवडेल." },
+        "meditation": { "id": "med_t1_002", "type": "meditation", "stage": "t1", "lang": "mr", "audioDurationSec": 240, "bodyMr": "डोळे मिटून शरीर पायांपासून डोक्यापर्यंत सैल करा.", "tags": ["relaxation"] },
+        "tip": { "id": "tip_t1_002", "type": "tip", "stage": "t1", "lang": "mr", "bodyMr": "ताजी फळं आणि घरचं हलकं जेवण घ्या. आहाराबद्दल डॉक्टर/आहारतज्ञांचा सल्ला घ्या.", "tags": ["diet"] },
+        "partnerTask": { "id": "pt_002", "type": "partner_task", "stage": "t1", "lang": "mr", "bodyMr": "आज स्वयंपाकात किंवा एखाद्या कामात मदत करा." }
+      },
+      "routine": [
+        { "taskKey": "rt_meditate", "titleMr": "सकाळचं ध्यान", "deepLink": "app://calm/meditation" },
+        { "taskKey": "rt_water", "titleMr": "पाणी प्या", "target": 8, "deepLink": "app://tracker/water" },
+        { "taskKey": "rt_walk", "titleMr": "हलकं चालणं" },
+        { "taskKey": "rt_samvad", "titleMr": "गर्भसंवाद", "deepLink": "app://samvad/today" }
+      ]
+    },
+    {
+      "id": "day_t1_003", "stage": "t1", "dayIndex": 3, "titleMr": "दिवस ३", "disclaimerMr": "ही माहिती सर्वसाधारण आहे. कृपया तुमच्या डॉक्टरांचा सल्ला घ्या.",
+      "slots": {
+        "affirmation": { "id": "aff_t1_003", "type": "affirmation", "stage": "t1", "lang": "mr", "bodyMr": "प्रत्येक श्वासासोबत मी अधिक शांत होत आहे." },
+        "garbhSamvad": { "id": "gs_t1_003", "type": "garbh_samvad", "stage": "t1", "lang": "mr", "titleMr": "प्रेम", "audioDurationSec": 180, "bodyMr": "बाळा, तुझ्या येण्याची आम्ही आतुरतेने वाट पाहत आहोत. आम्ही तुझ्यावर खूप प्रेम करतो." },
+        "meditation": { "id": "med_t1_003", "type": "meditation", "stage": "t1", "lang": "mr", "audioDurationSec": 180, "bodyMr": "श्वासावर लक्ष — विचार आले तरी हळूच श्वासाकडे परत या.", "tags": ["breathing"] },
+        "tip": { "id": "tip_t1_003", "type": "tip", "stage": "t1", "lang": "mr", "bodyMr": "थकवा वाटला तर थांबा आणि विश्रांती घ्या. स्वतःशी प्रेमळ राहा.", "tags": ["rest"] },
+        "partnerTask": { "id": "pt_003", "type": "partner_task", "stage": "t1", "lang": "mr", "bodyMr": "आज आईला आवडतं शांत संगीत लावा." }
+      },
+      "routine": [
+        { "taskKey": "rt_breathe", "titleMr": "श्वसन", "deepLink": "app://calm/breathing" },
+        { "taskKey": "rt_water", "titleMr": "पाणी प्या", "target": 8, "deepLink": "app://tracker/water" },
+        { "taskKey": "rt_gratitude", "titleMr": "कृतज्ञता नोंद", "deepLink": "app://journal" },
+        { "taskKey": "rt_samvad", "titleMr": "गर्भसंवाद", "deepLink": "app://samvad/today" }
+      ]
+    },
+    {
+      "id": "day_t1_004", "stage": "t1", "dayIndex": 4, "titleMr": "दिवस ४", "disclaimerMr": "ही माहिती सर्वसाधारण आहे. कृपया तुमच्या डॉक्टरांचा सल्ला घ्या.",
+      "slots": {
+        "affirmation": { "id": "aff_t1_004", "type": "affirmation", "stage": "t1", "lang": "mr", "bodyMr": "मी एकटी नाही; माझ्या भोवती प्रेम आणि आधार आहे." },
+        "garbhSamvad": { "id": "gs_t1_004", "type": "garbh_samvad", "stage": "t1", "lang": "mr", "titleMr": "ओळख", "audioDurationSec": 180, "bodyMr": "बाळा, आजचा दिवस छान आहे. मी तुझ्याशी थोडं बोलते म्हणजे आपली ओळख वाढेल." },
+        "meditation": { "id": "med_t1_004", "type": "meditation", "stage": "t1", "lang": "mr", "audioDurationSec": 300, "bodyMr": "कमळासारखं मन हळू उमलू द्या; शांत राहा.", "tags": ["meditation"] },
+        "tip": { "id": "tip_t1_004", "type": "tip", "stage": "t1", "lang": "mr", "bodyMr": "स्क्रीनपासून थोडा वेळ दूर राहा; मोकळी हवा घ्या.", "tags": ["wellbeing"] },
+        "partnerTask": { "id": "pt_004", "type": "partner_task", "stage": "t1", "lang": "mr", "bodyMr": "आज दोघं मिळून १० मिनिटं शांत बसा." }
+      },
+      "routine": [
+        { "taskKey": "rt_meditate", "titleMr": "ध्यान", "deepLink": "app://calm/meditation" },
+        { "taskKey": "rt_water", "titleMr": "पाणी प्या", "target": 8, "deepLink": "app://tracker/water" },
+        { "taskKey": "rt_walk", "titleMr": "हलकं चालणं" },
+        { "taskKey": "rt_journal", "titleMr": "नोंद", "deepLink": "app://journal" }
+      ]
+    },
+    {
+      "id": "day_t1_005", "stage": "t1", "dayIndex": 5, "titleMr": "दिवस ५", "disclaimerMr": "ही माहिती सर्वसाधारण आहे. कृपया तुमच्या डॉक्टरांचा सल्ला घ्या.",
+      "slots": {
+        "affirmation": { "id": "aff_t1_005", "type": "affirmation", "stage": "t1", "lang": "mr", "bodyMr": "माझ्या मनातली शांती माझ्या बाळापर्यंत पोहोचते." },
+        "garbhSamvad": { "id": "gs_t1_005", "type": "garbh_samvad", "stage": "t1", "lang": "mr", "titleMr": "स्वीकार", "audioDurationSec": 180, "bodyMr": "बाळा, तू जसा आहेस तसाच आम्हाला हवा आहेस. आम्ही तुझी काळजी घेऊ." },
+        "meditation": { "id": "med_t1_005", "type": "meditation", "stage": "t1", "lang": "mr", "audioDurationSec": 180, "bodyMr": "दीर्घ श्वसन; प्रत्येक श्वासात 'शांती' म्हणा.", "tags": ["breathing"] },
+        "tip": { "id": "tip_t1_005", "type": "tip", "stage": "t1", "lang": "mr", "bodyMr": "झोप पुरेशी घ्या; रात्री ठराविक वेळी झोपण्याचा प्रयत्न करा.", "tags": ["sleep"] },
+        "partnerTask": { "id": "pt_005", "type": "partner_task", "stage": "t1", "lang": "mr", "bodyMr": "आज रात्री आईला लवकर आराम करू द्या; कामं तुम्ही सांभाळा." }
+      },
+      "routine": [
+        { "taskKey": "rt_breathe", "titleMr": "श्वसन", "deepLink": "app://calm/breathing" },
+        { "taskKey": "rt_water", "titleMr": "पाणी प्या", "target": 8, "deepLink": "app://tracker/water" },
+        { "taskKey": "rt_samvad", "titleMr": "गर्भसंवाद", "deepLink": "app://samvad/today" },
+        { "taskKey": "rt_sleep", "titleMr": "लवकर झोप" }
+      ]
+    },
+    {
+      "id": "day_t1_006", "stage": "t1", "dayIndex": 6, "titleMr": "दिवस ६", "disclaimerMr": "ही माहिती सर्वसाधारण आहे. कृपया तुमच्या डॉक्टरांचा सल्ला घ्या.",
+      "slots": {
+        "affirmation": { "id": "aff_t1_006", "type": "affirmation", "stage": "t1", "lang": "mr", "bodyMr": "मी माझ्या भावनांचा आदर करते; त्या येतात-जातात." },
+        "garbhSamvad": { "id": "gs_t1_006", "type": "garbh_samvad", "stage": "t1", "lang": "mr", "titleMr": "भावना", "audioDurationSec": 180, "bodyMr": "बाळा, कधी मला थोडं वेगळं वाटतं, पण तुझ्यावरचं प्रेम कायम आहे." },
+        "meditation": { "id": "med_t1_006", "type": "meditation", "stage": "t1", "lang": "mr", "audioDurationSec": 240, "bodyMr": "मन अस्वस्थ असेल तर फक्त श्वास मोजा.", "tags": ["breathing"] },
+        "tip": { "id": "tip_t1_006", "type": "tip", "stage": "t1", "lang": "mr", "bodyMr": "भावना जास्त जाणवल्यास जवळच्या व्यक्तीशी बोला. सतत त्रास असेल तर डॉक्टरांना भेटा.", "tags": ["mental_health"] },
+        "partnerTask": { "id": "pt_006", "type": "partner_task", "stage": "t1", "lang": "mr", "bodyMr": "आज फक्त ऐका — आईचं मन मोकळं होऊ द्या." }
+      },
+      "routine": [
+        { "taskKey": "rt_meditate", "titleMr": "ध्यान", "deepLink": "app://calm/meditation" },
+        { "taskKey": "rt_water", "titleMr": "पाणी प्या", "target": 8, "deepLink": "app://tracker/water" },
+        { "taskKey": "rt_mood", "titleMr": "मन:स्थिती नोंद", "deepLink": "app://tracker/mood" },
+        { "taskKey": "rt_samvad", "titleMr": "गर्भसंवाद", "deepLink": "app://samvad/today" }
+      ]
+    },
+    {
+      "id": "day_t1_007", "stage": "t1", "dayIndex": 7, "titleMr": "दिवस ७", "disclaimerMr": "ही माहिती सर्वसाधारण आहे. कृपया तुमच्या डॉक्टरांचा सल्ला घ्या.",
+      "slots": {
+        "affirmation": { "id": "aff_t1_007", "type": "affirmation", "stage": "t1", "lang": "mr", "bodyMr": "हा आठवडा मी कृतज्ञतेने पूर्ण करते." },
+        "garbhSamvad": { "id": "gs_t1_007", "type": "garbh_samvad", "stage": "t1", "lang": "mr", "titleMr": "पहिला आठवडा", "audioDurationSec": 180, "bodyMr": "बाळा, हा आपला पहिला आठवडा एकत्र. तुझ्यासोबतचा हा प्रवास सुंदर आहे." },
+        "meditation": { "id": "med_t1_007", "type": "meditation", "stage": "t1", "lang": "mr", "audioDurationSec": 300, "bodyMr": "आठवड्यातल्या तीन चांगल्या गोष्टी आठवा.", "tags": ["gratitude"] },
+        "tip": { "id": "tip_t1_007", "type": "tip", "stage": "t1", "lang": "mr", "bodyMr": "आठवड्याभराचा आढावा घ्या; स्वतःचं कौतुक करा.", "tags": ["wellbeing"] },
+        "partnerTask": { "id": "pt_007", "type": "partner_task", "stage": "t1", "lang": "mr", "bodyMr": "आज आठवड्याभरातली एक आनंदाची गोष्ट एकत्र साजरी करा." }
+      },
+      "routine": [
+        { "taskKey": "rt_meditate", "titleMr": "ध्यान", "deepLink": "app://calm/meditation" },
+        { "taskKey": "rt_water", "titleMr": "पाणी प्या", "target": 8, "deepLink": "app://tracker/water" },
+        { "taskKey": "rt_gratitude", "titleMr": "कृतज्ञता नोंद", "deepLink": "app://journal" },
+        { "taskKey": "rt_samvad", "titleMr": "गर्भसंवाद", "deepLink": "app://samvad/today" }
+      ]
+    },
+    {
+      "id": "day_t1_008", "stage": "t1", "dayIndex": 8, "titleMr": "दिवस ८", "disclaimerMr": "ही माहिती सर्वसाधारण आहे. कृपया तुमच्या डॉक्टरांचा सल्ला घ्या.",
+      "slots": {
+        "affirmation": { "id": "aff_t1_008", "type": "affirmation", "stage": "t1", "lang": "mr", "bodyMr": "माझं शरीर रोज नवीन चमत्कार घडवत आहे." },
+        "garbhSamvad": { "id": "gs_t1_008", "type": "garbh_samvad", "stage": "t1", "lang": "mr", "titleMr": "वाढ", "audioDurationSec": 180, "bodyMr": "बाळा, तू हळूहळू वाढतो आहेस. आम्ही प्रत्येक क्षण जपतो." },
+        "meditation": { "id": "med_t1_008", "type": "meditation", "stage": "t1", "lang": "mr", "audioDurationSec": 180, "bodyMr": "श्वसन; शरीराला 'धन्यवाद' म्हणा.", "tags": ["breathing"] },
+        "tip": { "id": "tip_t1_008", "type": "tip", "stage": "t1", "lang": "mr", "bodyMr": "हलकं, वारंवार थोडं थोडं खा; मळमळ वाटल्यास घाई करू नका. डॉक्टरांचा सल्ला घ्या.", "tags": ["diet"] },
+        "partnerTask": { "id": "pt_008", "type": "partner_task", "stage": "t1", "lang": "mr", "bodyMr": "आज आईला आवडेल असा हलका नाश्ता तयार करा." }
+      },
+      "routine": [
+        { "taskKey": "rt_breathe", "titleMr": "श्वसन", "deepLink": "app://calm/breathing" },
+        { "taskKey": "rt_water", "titleMr": "पाणी प्या", "target": 8, "deepLink": "app://tracker/water" },
+        { "taskKey": "rt_walk", "titleMr": "हलकं चालणं" },
+        { "taskKey": "rt_samvad", "titleMr": "गर्भसंवाद", "deepLink": "app://samvad/today" }
+      ]
+    },
+    {
+      "id": "day_t1_009", "stage": "t1", "dayIndex": 9, "titleMr": "दिवस ९", "disclaimerMr": "ही माहिती सर्वसाधारण आहे. कृपया तुमच्या डॉक्टरांचा सल्ला घ्या.",
+      "slots": {
+        "affirmation": { "id": "aff_t1_009", "type": "affirmation", "stage": "t1", "lang": "mr", "bodyMr": "मी विश्रांती घेणं हे आळस नाही, ती काळजी आहे." },
+        "garbhSamvad": { "id": "gs_t1_009", "type": "garbh_samvad", "stage": "t1", "lang": "mr", "titleMr": "विश्रांती", "audioDurationSec": 180, "bodyMr": "बाळा, आज आपण थोडी विश्रांती घेऊ. आराम करणंही प्रेमच आहे." },
+        "meditation": { "id": "med_t1_009", "type": "meditation", "stage": "t1", "lang": "mr", "audioDurationSec": 240, "bodyMr": "पडून राहून श्वासावर लक्ष द्या.", "tags": ["relaxation"] },
+        "tip": { "id": "tip_t1_009", "type": "tip", "stage": "t1", "lang": "mr", "bodyMr": "दिवसातून थोडा वेळ पाय वर करून आराम करा.", "tags": ["rest"] },
+        "partnerTask": { "id": "pt_009", "type": "partner_task", "stage": "t1", "lang": "mr", "bodyMr": "आज घरातलं एखादं जड काम स्वतः करा." }
+      },
+      "routine": [
+        { "taskKey": "rt_meditate", "titleMr": "ध्यान", "deepLink": "app://calm/meditation" },
+        { "taskKey": "rt_water", "titleMr": "पाणी प्या", "target": 8, "deepLink": "app://tracker/water" },
+        { "taskKey": "rt_rest", "titleMr": "विश्रांती" },
+        { "taskKey": "rt_journal", "titleMr": "नोंद", "deepLink": "app://journal" }
+      ]
+    },
+    {
+      "id": "day_t1_010", "stage": "t1", "dayIndex": 10, "titleMr": "दिवस १०", "disclaimerMr": "ही माहिती सर्वसाधारण आहे. कृपया तुमच्या डॉक्टरांचा सल्ला घ्या.",
+      "slots": {
+        "affirmation": { "id": "aff_t1_010", "type": "affirmation", "stage": "t1", "lang": "mr", "bodyMr": "मी सकारात्मक विचारांना जागा देते." },
+        "garbhSamvad": { "id": "gs_t1_010", "type": "garbh_samvad", "stage": "t1", "lang": "mr", "titleMr": "स्वप्नं", "audioDurationSec": 180, "bodyMr": "बाळा, मी तुझ्यासाठी सुंदर स्वप्नं पाहते. तू आनंदी आणि निरोगी राहशील." },
+        "meditation": { "id": "med_t1_010", "type": "meditation", "stage": "t1", "lang": "mr", "audioDurationSec": 300, "bodyMr": "एका शांत ठिकाणाची कल्पना करा.", "tags": ["visualization"] },
+        "tip": { "id": "tip_t1_010", "type": "tip", "stage": "t1", "lang": "mr", "bodyMr": "नकारात्मक बातम्या/चर्चा थोड्या कमी करा; मन हलकं ठेवा.", "tags": ["wellbeing"] },
+        "partnerTask": { "id": "pt_010", "type": "partner_task", "stage": "t1", "lang": "mr", "bodyMr": "आज आईसोबत एखादी आनंददायी आठवण शेअर करा." }
+      },
+      "routine": [
+        { "taskKey": "rt_meditate", "titleMr": "ध्यान", "deepLink": "app://calm/meditation" },
+        { "taskKey": "rt_water", "titleMr": "पाणी प्या", "target": 8, "deepLink": "app://tracker/water" },
+        { "taskKey": "rt_samvad", "titleMr": "गर्भसंवाद", "deepLink": "app://samvad/today" },
+        { "taskKey": "rt_journal", "titleMr": "नोंद", "deepLink": "app://journal" }
+      ]
+    },
+    {
+      "id": "day_t1_011", "stage": "t1", "dayIndex": 11, "titleMr": "दिवस ११", "disclaimerMr": "ही माहिती सर्वसाधारण आहे. कृपया तुमच्या डॉक्टरांचा सल्ला घ्या.",
+      "slots": {
+        "affirmation": { "id": "aff_t1_011", "type": "affirmation", "stage": "t1", "lang": "mr", "bodyMr": "माझ्या प्रत्येक पावलात बाळासाठी प्रेम आहे." },
+        "garbhSamvad": { "id": "gs_t1_011", "type": "garbh_samvad", "stage": "t1", "lang": "mr", "titleMr": "एकत्र", "audioDurationSec": 180, "bodyMr": "बाळा, मी हळू चालते तेव्हा तुलाही ते जाणवतं. आपण एकत्र आहोत." },
+        "meditation": { "id": "med_t1_011", "type": "meditation", "stage": "t1", "lang": "mr", "audioDurationSec": 180, "bodyMr": "चालता-चालता श्वासावर लक्ष.", "tags": ["breathing"] },
+        "tip": { "id": "tip_t1_011", "type": "tip", "stage": "t1", "lang": "mr", "bodyMr": "सौम्य, आरामदायक चालणं चांगलं; दमछाक होईल इतकं नको. डॉक्टरांचा सल्ला घ्या.", "tags": ["movement"] },
+        "partnerTask": { "id": "pt_011", "type": "partner_task", "stage": "t1", "lang": "mr", "bodyMr": "आज संध्याकाळी आईसोबत थोडं फिरायला जा." }
+      },
+      "routine": [
+        { "taskKey": "rt_walk", "titleMr": "हलकं चालणं" },
+        { "taskKey": "rt_water", "titleMr": "पाणी प्या", "target": 8, "deepLink": "app://tracker/water" },
+        { "taskKey": "rt_breathe", "titleMr": "श्वसन", "deepLink": "app://calm/breathing" },
+        { "taskKey": "rt_samvad", "titleMr": "गर्भसंवाद", "deepLink": "app://samvad/today" }
+      ]
+    },
+    {
+      "id": "day_t1_012", "stage": "t1", "dayIndex": 12, "titleMr": "दिवस १२", "disclaimerMr": "ही माहिती सर्वसाधारण आहे. कृपया तुमच्या डॉक्टरांचा सल्ला घ्या.",
+      "slots": {
+        "affirmation": { "id": "aff_t1_012", "type": "affirmation", "stage": "t1", "lang": "mr", "bodyMr": "मी माझ्या बाळासाठी शांत वातावरण तयार करते." },
+        "garbhSamvad": { "id": "gs_t1_012", "type": "garbh_samvad", "stage": "t1", "lang": "mr", "titleMr": "सुरक्षित घर", "audioDurationSec": 180, "bodyMr": "बाळा, आपलं घर प्रेमाने भरलेलं आहे. इथे तुला सुरक्षित वाटेल." },
+        "meditation": { "id": "med_t1_012", "type": "meditation", "stage": "t1", "lang": "mr", "audioDurationSec": 240, "bodyMr": "मंद संगीतासह शांत बसा.", "tags": ["music", "relaxation"] },
+        "tip": { "id": "tip_t1_012", "type": "tip", "stage": "t1", "lang": "mr", "bodyMr": "झोपण्याआधी थोडा वेळ शांत संगीत किंवा मंत्र ऐका.", "tags": ["sleep"] },
+        "partnerTask": { "id": "pt_012", "type": "partner_task", "stage": "t1", "lang": "mr", "bodyMr": "आज झोपण्याआधी आईसोबत शांत संगीत ऐका." }
+      },
+      "routine": [
+        { "taskKey": "rt_meditate", "titleMr": "ध्यान", "deepLink": "app://calm/meditation" },
+        { "taskKey": "rt_water", "titleMr": "पाणी प्या", "target": 8, "deepLink": "app://tracker/water" },
+        { "taskKey": "rt_music", "titleMr": "शांत संगीत", "deepLink": "app://calm/music" },
+        { "taskKey": "rt_samvad", "titleMr": "गर्भसंवाद", "deepLink": "app://samvad/today" }
+      ]
+    },
+    {
+      "id": "day_t1_013", "stage": "t1", "dayIndex": 13, "titleMr": "दिवस १३", "disclaimerMr": "ही माहिती सर्वसाधारण आहे. कृपया तुमच्या डॉक्टरांचा सल्ला घ्या.",
+      "slots": {
+        "affirmation": { "id": "aff_t1_013", "type": "affirmation", "stage": "t1", "lang": "mr", "bodyMr": "मी माझ्यावर आणि माझ्या प्रवासावर विश्वास ठेवते." },
+        "garbhSamvad": { "id": "gs_t1_013", "type": "garbh_samvad", "stage": "t1", "lang": "mr", "titleMr": "वाटचाल", "audioDurationSec": 180, "bodyMr": "बाळा, पहिली तिमाही पूर्ण होत आली. आपण छान पुढे जात आहोत." },
+        "meditation": { "id": "med_t1_013", "type": "meditation", "stage": "t1", "lang": "mr", "audioDurationSec": 300, "bodyMr": "कृतज्ञता ध्यान.", "tags": ["gratitude"] },
+        "tip": { "id": "tip_t1_013", "type": "tip", "stage": "t1", "lang": "mr", "bodyMr": "डॉक्टरांची नियमित तपासणी चुकवू नका; प्रश्न लिहून ठेवा. डॉक्टरांचा सल्ला घ्या.", "tags": ["checkup"] },
+        "partnerTask": { "id": "pt_013", "type": "partner_task", "stage": "t1", "lang": "mr", "bodyMr": "पुढच्या डॉक्टर भेटीला सोबत जाण्याचं नियोजन करा." }
+      },
+      "routine": [
+        { "taskKey": "rt_meditate", "titleMr": "ध्यान", "deepLink": "app://calm/meditation" },
+        { "taskKey": "rt_water", "titleMr": "पाणी प्या", "target": 8, "deepLink": "app://tracker/water" },
+        { "taskKey": "rt_journal", "titleMr": "नोंद", "deepLink": "app://journal" },
+        { "taskKey": "rt_samvad", "titleMr": "गर्भसंवाद", "deepLink": "app://samvad/today" }
+      ]
+    },
+    {
+      "id": "day_t1_014", "stage": "t1", "dayIndex": 14, "titleMr": "दिवस १४", "disclaimerMr": "ही माहिती सर्वसाधारण आहे. कृपया तुमच्या डॉक्टरांचा सल्ला घ्या.",
+      "slots": {
+        "affirmation": { "id": "aff_t1_014", "type": "affirmation", "stage": "t1", "lang": "mr", "bodyMr": "मी प्रेमाने भरलेली आहे आणि ते बाळापर्यंत पोहोचते." },
+        "garbhSamvad": { "id": "gs_t1_014", "type": "garbh_samvad", "stage": "t1", "lang": "mr", "titleMr": "गोष्ट", "audioDurationSec": 240, "bodyMr": "बाळा, आज मी तुला एक छोटी गोष्ट सांगते..." },
+        "meditation": { "id": "med_t1_014", "type": "meditation", "stage": "t1", "lang": "mr", "audioDurationSec": 240, "bodyMr": "श्वसन; चेहरा आणि जबडा सैल करा.", "tags": ["breathing"] },
+        "tip": { "id": "tip_t1_014", "type": "tip", "stage": "t1", "lang": "mr", "bodyMr": "दिवसातून एकदा मोकळ्या हवेत खोल श्वास घ्या.", "tags": ["breathing"] },
+        "partnerTask": { "id": "pt_014", "type": "partner_task", "stage": "t1", "lang": "mr", "bodyMr": "आज तुम्ही बाळाला एक गोष्ट सांगा." }
+      },
+      "routine": [
+        { "taskKey": "rt_breathe", "titleMr": "श्वसन", "deepLink": "app://calm/breathing" },
+        { "taskKey": "rt_water", "titleMr": "पाणी प्या", "target": 8, "deepLink": "app://tracker/water" },
+        { "taskKey": "rt_samvad", "titleMr": "गोष्ट-संवाद", "deepLink": "app://samvad/today" },
+        { "taskKey": "rt_journal", "titleMr": "नोंद", "deepLink": "app://journal" }
+      ]
+    },
+    {
+      "id": "day_t1_015", "stage": "t1", "dayIndex": 15, "titleMr": "दिवस १५", "disclaimerMr": "ही माहिती सर्वसाधारण आहे. कृपया तुमच्या डॉक्टरांचा सल्ला घ्या.",
+      "slots": {
+        "affirmation": { "id": "aff_t1_015", "type": "affirmation", "stage": "t1", "lang": "mr", "bodyMr": "अर्धा महिना पूर्ण — मी स्वतःचं कौतुक करते." },
+        "garbhSamvad": { "id": "gs_t1_015", "type": "garbh_samvad", "stage": "t1", "lang": "mr", "titleMr": "अभिमान", "audioDurationSec": 180, "bodyMr": "बाळा, आपण इथवर एकत्र आलो. मला तुझा अभिमान आहे." },
+        "meditation": { "id": "med_t1_015", "type": "meditation", "stage": "t1", "lang": "mr", "audioDurationSec": 300, "bodyMr": "शरीराच्या प्रत्येक भागाला आभार माना.", "tags": ["gratitude"] },
+        "tip": { "id": "tip_t1_015", "type": "tip", "stage": "t1", "lang": "mr", "bodyMr": "स्वतःसाठी आज एखादी आवडती छोटी गोष्ट करा.", "tags": ["selfcare"] },
+        "partnerTask": { "id": "pt_015", "type": "partner_task", "stage": "t1", "lang": "mr", "bodyMr": "आज आईला एखादी आवडती गोष्ट भेट म्हणून द्या (छोटी, साधी)." }
+      },
+      "routine": [
+        { "taskKey": "rt_meditate", "titleMr": "ध्यान", "deepLink": "app://calm/meditation" },
+        { "taskKey": "rt_water", "titleMr": "पाणी प्या", "target": 8, "deepLink": "app://tracker/water" },
+        { "taskKey": "rt_gratitude", "titleMr": "कृतज्ञता नोंद", "deepLink": "app://journal" },
+        { "taskKey": "rt_samvad", "titleMr": "गर्भसंवाद", "deepLink": "app://samvad/today" }
+      ]
+    },
+    {
+      "id": "day_t1_016", "stage": "t1", "dayIndex": 16, "titleMr": "दिवस १६", "disclaimerMr": "ही माहिती सर्वसाधारण आहे. कृपया तुमच्या डॉक्टरांचा सल्ला घ्या.",
+      "slots": {
+        "affirmation": { "id": "aff_t1_016", "type": "affirmation", "stage": "t1", "lang": "mr", "bodyMr": "मी शांतपणे आजचा दिवस स्वीकारते." },
+        "garbhSamvad": { "id": "gs_t1_016", "type": "garbh_samvad", "stage": "t1", "lang": "mr", "titleMr": "भेट", "audioDurationSec": 180, "bodyMr": "बाळा, प्रत्येक दिवस तुझ्यासाठी एक नवीन भेट आहे." },
+        "meditation": { "id": "med_t1_016", "type": "meditation", "stage": "t1", "lang": "mr", "audioDurationSec": 180, "bodyMr": "श्वसन — श्वासात 'स्वीकार' म्हणा.", "tags": ["breathing"] },
+        "tip": { "id": "tip_t1_016", "type": "tip", "stage": "t1", "lang": "mr", "bodyMr": "आजचं काम छोट्या भागांत करा; सगळं एकदम नको.", "tags": ["wellbeing"] },
+        "partnerTask": { "id": "pt_016", "type": "partner_task", "stage": "t1", "lang": "mr", "bodyMr": "आज आईचं एखादं काम न सांगता पूर्ण करा." }
+      },
+      "routine": [
+        { "taskKey": "rt_breathe", "titleMr": "श्वसन", "deepLink": "app://calm/breathing" },
+        { "taskKey": "rt_water", "titleMr": "पाणी प्या", "target": 8, "deepLink": "app://tracker/water" },
+        { "taskKey": "rt_walk", "titleMr": "हलकं चालणं" },
+        { "taskKey": "rt_samvad", "titleMr": "गर्भसंवाद", "deepLink": "app://samvad/today" }
+      ]
+    },
+    {
+      "id": "day_t1_017", "stage": "t1", "dayIndex": 17, "titleMr": "दिवस १७", "disclaimerMr": "ही माहिती सर्वसाधारण आहे. कृपया तुमच्या डॉक्टरांचा सल्ला घ्या.",
+      "slots": {
+        "affirmation": { "id": "aff_t1_017", "type": "affirmation", "stage": "t1", "lang": "mr", "bodyMr": "माझं मन शांत, माझं हृदय कृतज्ञ." },
+        "garbhSamvad": { "id": "gs_t1_017", "type": "garbh_samvad", "stage": "t1", "lang": "mr", "titleMr": "शांती", "audioDurationSec": 180, "bodyMr": "बाळा, मी तुझ्यासाठी शांत आणि आनंदी राहण्याचा प्रयत्न करते." },
+        "meditation": { "id": "med_t1_017", "type": "meditation", "stage": "t1", "lang": "mr", "audioDurationSec": 300, "bodyMr": "मंद मंत्र ऐकत शांत बसा.", "tags": ["mantra"] },
+        "tip": { "id": "tip_t1_017", "type": "tip", "stage": "t1", "lang": "mr", "bodyMr": "मन अस्वस्थ असेल तर लिहून मोकळं करा.", "tags": ["mental_health"] },
+        "partnerTask": { "id": "pt_017", "type": "partner_task", "stage": "t1", "lang": "mr", "bodyMr": "आज आईचं मन शांत राहील असं वातावरण ठेवा." }
+      },
+      "routine": [
+        { "taskKey": "rt_meditate", "titleMr": "ध्यान", "deepLink": "app://calm/meditation" },
+        { "taskKey": "rt_water", "titleMr": "पाणी प्या", "target": 8, "deepLink": "app://tracker/water" },
+        { "taskKey": "rt_journal", "titleMr": "नोंद", "deepLink": "app://journal" },
+        { "taskKey": "rt_mantra", "titleMr": "मंत्र", "deepLink": "app://calm/mantra" }
+      ]
+    },
+    {
+      "id": "day_t1_018", "stage": "t1", "dayIndex": 18, "titleMr": "दिवस १८", "disclaimerMr": "ही माहिती सर्वसाधारण आहे. कृपया तुमच्या डॉक्टरांचा सल्ला घ्या.",
+      "slots": {
+        "affirmation": { "id": "aff_t1_018", "type": "affirmation", "stage": "t1", "lang": "mr", "bodyMr": "मी निसर्गाशी आणि स्वतःशी जोडलेली आहे." },
+        "garbhSamvad": { "id": "gs_t1_018", "type": "garbh_samvad", "stage": "t1", "lang": "mr", "titleMr": "सुंदर जग", "audioDurationSec": 180, "bodyMr": "बाळा, बाहेरचं जग सुंदर आहे; मी तुला ते दाखवायला उत्सुक आहे." },
+        "meditation": { "id": "med_t1_018", "type": "meditation", "stage": "t1", "lang": "mr", "audioDurationSec": 240, "bodyMr": "झाडं, आकाश पाहत खोल श्वास.", "tags": ["nature", "breathing"] },
+        "tip": { "id": "tip_t1_018", "type": "tip", "stage": "t1", "lang": "mr", "bodyMr": "शक्य असल्यास सकाळचं कोवळं ऊन थोडा वेळ घ्या.", "tags": ["wellbeing"] },
+        "partnerTask": { "id": "pt_018", "type": "partner_task", "stage": "t1", "lang": "mr", "bodyMr": "आज सकाळी आईसोबत थोडा वेळ बाहेर बसा." }
+      },
+      "routine": [
+        { "taskKey": "rt_breathe", "titleMr": "श्वसन", "deepLink": "app://calm/breathing" },
+        { "taskKey": "rt_water", "titleMr": "पाणी प्या", "target": 8, "deepLink": "app://tracker/water" },
+        { "taskKey": "rt_outdoor", "titleMr": "मोकळी हवा" },
+        { "taskKey": "rt_samvad", "titleMr": "गर्भसंवाद", "deepLink": "app://samvad/today" }
+      ]
+    },
+    {
+      "id": "day_t1_019", "stage": "t1", "dayIndex": 19, "titleMr": "दिवस १९", "disclaimerMr": "ही माहिती सर्वसाधारण आहे. कृपया तुमच्या डॉक्टरांचा सल्ला घ्या.",
+      "slots": {
+        "affirmation": { "id": "aff_t1_019", "type": "affirmation", "stage": "t1", "lang": "mr", "bodyMr": "मी माझ्या शरीराचं ऐकते आणि त्याचा आदर करते." },
+        "garbhSamvad": { "id": "gs_t1_019", "type": "garbh_samvad", "stage": "t1", "lang": "mr", "titleMr": "काळजी", "audioDurationSec": 180, "bodyMr": "बाळा, मी माझी काळजी घेते म्हणजे तुझीही काळजी घेतली जाते." },
+        "meditation": { "id": "med_t1_019", "type": "meditation", "stage": "t1", "lang": "mr", "audioDurationSec": 180, "bodyMr": "शरीर-स्कॅन ध्यान.", "tags": ["bodyscan"] },
+        "tip": { "id": "tip_t1_019", "type": "tip", "stage": "t1", "lang": "mr", "bodyMr": "कोणतीही अस्वस्थता वाटल्यास दुर्लक्ष करू नका; डॉक्टरांना विचारा. डॉक्टरांचा सल्ला घ्या.", "tags": ["safety"] },
+        "partnerTask": { "id": "pt_019", "type": "partner_task", "stage": "t1", "lang": "mr", "bodyMr": "आज आईची तब्येत कशी आहे ते प्रेमाने विचारा." }
+      },
+      "routine": [
+        { "taskKey": "rt_meditate", "titleMr": "ध्यान", "deepLink": "app://calm/meditation" },
+        { "taskKey": "rt_water", "titleMr": "पाणी प्या", "target": 8, "deepLink": "app://tracker/water" },
+        { "taskKey": "rt_rest", "titleMr": "विश्रांती" },
+        { "taskKey": "rt_journal", "titleMr": "नोंद", "deepLink": "app://journal" }
+      ]
+    },
+    {
+      "id": "day_t1_020", "stage": "t1", "dayIndex": 20, "titleMr": "दिवस २०", "disclaimerMr": "ही माहिती सर्वसाधारण आहे. कृपया तुमच्या डॉक्टरांचा सल्ला घ्या.",
+      "slots": {
+        "affirmation": { "id": "aff_t1_020", "type": "affirmation", "stage": "t1", "lang": "mr", "bodyMr": "प्रत्येक छोटी गोष्ट माझ्या आनंदात भर घालते." },
+        "garbhSamvad": { "id": "gs_t1_020", "type": "garbh_samvad", "stage": "t1", "lang": "mr", "titleMr": "गाणं", "audioDurationSec": 240, "bodyMr": "बाळा, आज मी तुझ्यासाठी एक गाणं म्हणते." },
+        "meditation": { "id": "med_t1_020", "type": "meditation", "stage": "t1", "lang": "mr", "audioDurationSec": 300, "bodyMr": "मंद संगीतासह श्वसन.", "tags": ["music", "breathing"] },
+        "tip": { "id": "tip_t1_020", "type": "tip", "stage": "t1", "lang": "mr", "bodyMr": "आवडतं गाणं ऐकून मन प्रसन्न ठेवा.", "tags": ["wellbeing"] },
+        "partnerTask": { "id": "pt_020", "type": "partner_task", "stage": "t1", "lang": "mr", "bodyMr": "आज आईसोबत एखादं आवडतं गाणं ऐका." }
+      },
+      "routine": [
+        { "taskKey": "rt_breathe", "titleMr": "श्वसन", "deepLink": "app://calm/breathing" },
+        { "taskKey": "rt_water", "titleMr": "पाणी प्या", "target": 8, "deepLink": "app://tracker/water" },
+        { "taskKey": "rt_samvad", "titleMr": "गाणं-संवाद", "deepLink": "app://samvad/today" },
+        { "taskKey": "rt_journal", "titleMr": "नोंद", "deepLink": "app://journal" }
+      ]
+    },
+    {
+      "id": "day_t1_021", "stage": "t1", "dayIndex": 21, "titleMr": "दिवस २१", "disclaimerMr": "ही माहिती सर्वसाधारण आहे. कृपया तुमच्या डॉक्टरांचा सल्ला घ्या.",
+      "slots": {
+        "affirmation": { "id": "aff_t1_021", "type": "affirmation", "stage": "t1", "lang": "mr", "bodyMr": "तीन आठवडे — मी या प्रवासात अधिक खंबीर झाले." },
+        "garbhSamvad": { "id": "gs_t1_021", "type": "garbh_samvad", "stage": "t1", "lang": "mr", "titleMr": "जवळीक", "audioDurationSec": 180, "bodyMr": "बाळा, आपण रोज थोडं थोडं जवळ येत आहोत." },
+        "meditation": { "id": "med_t1_021", "type": "meditation", "stage": "t1", "lang": "mr", "audioDurationSec": 300, "bodyMr": "कृतज्ञता ध्यान.", "tags": ["gratitude"] },
+        "tip": { "id": "tip_t1_021", "type": "tip", "stage": "t1", "lang": "mr", "bodyMr": "या आठवड्यातल्या चांगल्या सवयी पुढे चालू ठेवा.", "tags": ["wellbeing"] },
+        "partnerTask": { "id": "pt_021", "type": "partner_task", "stage": "t1", "lang": "mr", "bodyMr": "आठवड्याभरातला तुमचा आवडता क्षण आईला सांगा." }
+      },
+      "routine": [
+        { "taskKey": "rt_meditate", "titleMr": "ध्यान", "deepLink": "app://calm/meditation" },
+        { "taskKey": "rt_water", "titleMr": "पाणी प्या", "target": 8, "deepLink": "app://tracker/water" },
+        { "taskKey": "rt_gratitude", "titleMr": "कृतज्ञता नोंद", "deepLink": "app://journal" },
+        { "taskKey": "rt_samvad", "titleMr": "गर्भसंवाद", "deepLink": "app://samvad/today" }
+      ]
+    },
+    {
+      "id": "day_t1_022", "stage": "t1", "dayIndex": 22, "titleMr": "दिवस २२", "disclaimerMr": "ही माहिती सर्वसाधारण आहे. कृपया तुमच्या डॉक्टरांचा सल्ला घ्या.",
+      "slots": {
+        "affirmation": { "id": "aff_t1_022", "type": "affirmation", "stage": "t1", "lang": "mr", "bodyMr": "मी संयमाने आणि प्रेमाने पुढे जाते." },
+        "garbhSamvad": { "id": "gs_t1_022", "type": "garbh_samvad", "stage": "t1", "lang": "mr", "titleMr": "संयम", "audioDurationSec": 180, "bodyMr": "बाळा, घाई नाही; आपण आपल्या गतीने सुंदर प्रवास करत आहोत." },
+        "meditation": { "id": "med_t1_022", "type": "meditation", "stage": "t1", "lang": "mr", "audioDurationSec": 180, "bodyMr": "श्वासात 'संयम' म्हणा.", "tags": ["breathing"] },
+        "tip": { "id": "tip_t1_022", "type": "tip", "stage": "t1", "lang": "mr", "bodyMr": "स्वतःशी तुलना करणं टाळा; प्रत्येक गर्भारपण वेगळं असतं.", "tags": ["wellbeing"] },
+        "partnerTask": { "id": "pt_022", "type": "partner_task", "stage": "t1", "lang": "mr", "bodyMr": "आज आईला आश्वासक शब्दांत आधार द्या." }
+      },
+      "routine": [
+        { "taskKey": "rt_breathe", "titleMr": "श्वसन", "deepLink": "app://calm/breathing" },
+        { "taskKey": "rt_water", "titleMr": "पाणी प्या", "target": 8, "deepLink": "app://tracker/water" },
+        { "taskKey": "rt_walk", "titleMr": "हलकं चालणं" },
+        { "taskKey": "rt_journal", "titleMr": "नोंद", "deepLink": "app://journal" }
+      ]
+    },
+    {
+      "id": "day_t1_023", "stage": "t1", "dayIndex": 23, "titleMr": "दिवस २३", "disclaimerMr": "ही माहिती सर्वसाधारण आहे. कृपया तुमच्या डॉक्टरांचा सल्ला घ्या.",
+      "slots": {
+        "affirmation": { "id": "aff_t1_023", "type": "affirmation", "stage": "t1", "lang": "mr", "bodyMr": "माझ्या आत शांतीचा एक झरा आहे." },
+        "garbhSamvad": { "id": "gs_t1_023", "type": "garbh_samvad", "stage": "t1", "lang": "mr", "titleMr": "शांतता", "audioDurationSec": 180, "bodyMr": "बाळा, जेव्हा मी शांत असते, तेव्हा तुलाही शांत वाटतं." },
+        "meditation": { "id": "med_t1_023", "type": "meditation", "stage": "t1", "lang": "mr", "audioDurationSec": 300, "bodyMr": "शांत झऱ्याची कल्पना करत ध्यान.", "tags": ["visualization"] },
+        "tip": { "id": "tip_t1_023", "type": "tip", "stage": "t1", "lang": "mr", "bodyMr": "झोपण्यापूर्वी फोन बाजूला ठेवा; शांत मन ठेवा.", "tags": ["sleep"] },
+        "partnerTask": { "id": "pt_023", "type": "partner_task", "stage": "t1", "lang": "mr", "bodyMr": "आज रात्री घरात शांत वातावरण ठेवा." }
+      },
+      "routine": [
+        { "taskKey": "rt_meditate", "titleMr": "ध्यान", "deepLink": "app://calm/meditation" },
+        { "taskKey": "rt_water", "titleMr": "पाणी प्या", "target": 8, "deepLink": "app://tracker/water" },
+        { "taskKey": "rt_mantra", "titleMr": "मंत्र", "deepLink": "app://calm/mantra" },
+        { "taskKey": "rt_sleep", "titleMr": "लवकर झोप" }
+      ]
+    },
+    {
+      "id": "day_t1_024", "stage": "t1", "dayIndex": 24, "titleMr": "दिवस २४", "disclaimerMr": "ही माहिती सर्वसाधारण आहे. कृपया तुमच्या डॉक्टरांचा सल्ला घ्या.",
+      "slots": {
+        "affirmation": { "id": "aff_t1_024", "type": "affirmation", "stage": "t1", "lang": "mr", "bodyMr": "मी कृतज्ञतेने आजचा दिवस सुरू करते." },
+        "garbhSamvad": { "id": "gs_t1_024", "type": "garbh_samvad", "stage": "t1", "lang": "mr", "titleMr": "सुंदर भेट", "audioDurationSec": 180, "bodyMr": "बाळा, तू माझ्या आयुष्यातली सर्वात सुंदर भेट आहेस." },
+        "meditation": { "id": "med_t1_024", "type": "meditation", "stage": "t1", "lang": "mr", "audioDurationSec": 240, "bodyMr": "तीन गोष्टींबद्दल कृतज्ञता.", "tags": ["gratitude"] },
+        "tip": { "id": "tip_t1_024", "type": "tip", "stage": "t1", "lang": "mr", "bodyMr": "सकाळी उठल्यावर एक सकारात्मक विचार मनात ठेवा.", "tags": ["wellbeing"] },
+        "partnerTask": { "id": "pt_024", "type": "partner_task", "stage": "t1", "lang": "mr", "bodyMr": "आज सकाळी आईला एक प्रेमळ संदेश द्या." }
+      },
+      "routine": [
+        { "taskKey": "rt_breathe", "titleMr": "श्वसन", "deepLink": "app://calm/breathing" },
+        { "taskKey": "rt_water", "titleMr": "पाणी प्या", "target": 8, "deepLink": "app://tracker/water" },
+        { "taskKey": "rt_gratitude", "titleMr": "कृतज्ञता नोंद", "deepLink": "app://journal" },
+        { "taskKey": "rt_samvad", "titleMr": "गर्भसंवाद", "deepLink": "app://samvad/today" }
+      ]
+    },
+    {
+      "id": "day_t1_025", "stage": "t1", "dayIndex": 25, "titleMr": "दिवस २५", "disclaimerMr": "ही माहिती सर्वसाधारण आहे. कृपया तुमच्या डॉक्टरांचा सल्ला घ्या.",
+      "slots": {
+        "affirmation": { "id": "aff_t1_025", "type": "affirmation", "stage": "t1", "lang": "mr", "bodyMr": "मी प्रेमाने स्वतःची काळजी घेते." },
+        "garbhSamvad": { "id": "gs_t1_025", "type": "garbh_samvad", "stage": "t1", "lang": "mr", "titleMr": "स्वतःवर प्रेम", "audioDurationSec": 180, "bodyMr": "बाळा, मी स्वतःवर प्रेम करते म्हणजे तुझ्यावरही." },
+        "meditation": { "id": "med_t1_025", "type": "meditation", "stage": "t1", "lang": "mr", "audioDurationSec": 300, "bodyMr": "स्वतःसाठी प्रेमळ विचार ध्यान.", "tags": ["selfcare"] },
+        "tip": { "id": "tip_t1_025", "type": "tip", "stage": "t1", "lang": "mr", "bodyMr": "आज स्वतःसाठी थोडा शांत वेळ काढा.", "tags": ["selfcare"] },
+        "partnerTask": { "id": "pt_025", "type": "partner_task", "stage": "t1", "lang": "mr", "bodyMr": "आज आईला आराम करायला वेळ मिळेल असं पाहा." }
+      },
+      "routine": [
+        { "taskKey": "rt_meditate", "titleMr": "ध्यान", "deepLink": "app://calm/meditation" },
+        { "taskKey": "rt_water", "titleMr": "पाणी प्या", "target": 8, "deepLink": "app://tracker/water" },
+        { "taskKey": "rt_rest", "titleMr": "विश्रांती" },
+        { "taskKey": "rt_journal", "titleMr": "नोंद", "deepLink": "app://journal" }
+      ]
+    },
+    {
+      "id": "day_t1_026", "stage": "t1", "dayIndex": 26, "titleMr": "दिवस २६", "disclaimerMr": "ही माहिती सर्वसाधारण आहे. कृपया तुमच्या डॉक्टरांचा सल्ला घ्या.",
+      "slots": {
+        "affirmation": { "id": "aff_t1_026", "type": "affirmation", "stage": "t1", "lang": "mr", "bodyMr": "माझा श्वास माझा सर्वात जवळचा मित्र आहे." },
+        "garbhSamvad": { "id": "gs_t1_026", "type": "garbh_samvad", "stage": "t1", "lang": "mr", "titleMr": "श्वास", "audioDurationSec": 180, "bodyMr": "बाळा, जेव्हा जेव्हा गरज वाटते, मी श्वासाकडे परत येते." },
+        "meditation": { "id": "med_t1_026", "type": "meditation", "stage": "t1", "lang": "mr", "audioDurationSec": 240, "bodyMr": "मंद, खोल श्वसन सराव.", "tags": ["breathing"] },
+        "tip": { "id": "tip_t1_026", "type": "tip", "stage": "t1", "lang": "mr", "bodyMr": "ताण जाणवल्यास काही खोल श्वास घ्या; थांबा.", "tags": ["mental_health"] },
+        "partnerTask": { "id": "pt_026", "type": "partner_task", "stage": "t1", "lang": "mr", "bodyMr": "आज आईसोबत २ मिनिटं एकत्र श्वसन करा." }
+      },
+      "routine": [
+        { "taskKey": "rt_breathe", "titleMr": "श्वसन", "deepLink": "app://calm/breathing" },
+        { "taskKey": "rt_water", "titleMr": "पाणी प्या", "target": 8, "deepLink": "app://tracker/water" },
+        { "taskKey": "rt_walk", "titleMr": "हलकं चालणं" },
+        { "taskKey": "rt_samvad", "titleMr": "गर्भसंवाद", "deepLink": "app://samvad/today" }
+      ]
+    },
+    {
+      "id": "day_t1_027", "stage": "t1", "dayIndex": 27, "titleMr": "दिवस २७", "disclaimerMr": "ही माहिती सर्वसाधारण आहे. कृपया तुमच्या डॉक्टरांचा सल्ला घ्या.",
+      "slots": {
+        "affirmation": { "id": "aff_t1_027", "type": "affirmation", "stage": "t1", "lang": "mr", "bodyMr": "मी आनंदाचे छोटे क्षण साजरे करते." },
+        "garbhSamvad": { "id": "gs_t1_027", "type": "garbh_samvad", "stage": "t1", "lang": "mr", "titleMr": "आनंदाचा क्षण", "audioDurationSec": 180, "bodyMr": "बाळा, आजचा एक छोटा आनंदाचा क्षण मी तुझ्यासोबत वाटते." },
+        "meditation": { "id": "med_t1_027", "type": "meditation", "stage": "t1", "lang": "mr", "audioDurationSec": 300, "bodyMr": "आजच्या एका आनंदी क्षणावर लक्ष.", "tags": ["gratitude"] },
+        "tip": { "id": "tip_t1_027", "type": "tip", "stage": "t1", "lang": "mr", "bodyMr": "दिवसातला एक चांगला क्षण नोंदवून ठेवा.", "tags": ["wellbeing"] },
+        "partnerTask": { "id": "pt_027", "type": "partner_task", "stage": "t1", "lang": "mr", "bodyMr": "आज दोघं मिळून एक छोटा आनंदाचा क्षण तयार करा." }
+      },
+      "routine": [
+        { "taskKey": "rt_meditate", "titleMr": "ध्यान", "deepLink": "app://calm/meditation" },
+        { "taskKey": "rt_water", "titleMr": "पाणी प्या", "target": 8, "deepLink": "app://tracker/water" },
+        { "taskKey": "rt_journal", "titleMr": "नोंद", "deepLink": "app://journal" },
+        { "taskKey": "rt_samvad", "titleMr": "गर्भसंवाद", "deepLink": "app://samvad/today" }
+      ]
+    },
+    {
+      "id": "day_t1_028", "stage": "t1", "dayIndex": 28, "titleMr": "दिवस २८", "disclaimerMr": "ही माहिती सर्वसाधारण आहे. कृपया तुमच्या डॉक्टरांचा सल्ला घ्या.",
+      "slots": {
+        "affirmation": { "id": "aff_t1_028", "type": "affirmation", "stage": "t1", "lang": "mr", "bodyMr": "चार आठवडे — मी प्रेम आणि शांतीने भरलेली आहे." },
+        "garbhSamvad": { "id": "gs_t1_028", "type": "garbh_samvad", "stage": "t1", "lang": "mr", "titleMr": "सुंदर महिना", "audioDurationSec": 180, "bodyMr": "बाळा, आपला हा महिना सुंदर गेला. पुढेही असाच जाईल." },
+        "meditation": { "id": "med_t1_028", "type": "meditation", "stage": "t1", "lang": "mr", "audioDurationSec": 300, "bodyMr": "कृतज्ञता ध्यान.", "tags": ["gratitude"] },
+        "tip": { "id": "tip_t1_028", "type": "tip", "stage": "t1", "lang": "mr", "bodyMr": "या महिन्यातल्या चांगल्या सवयींचा आढावा घ्या.", "tags": ["wellbeing"] },
+        "partnerTask": { "id": "pt_028", "type": "partner_task", "stage": "t1", "lang": "mr", "bodyMr": "या महिन्यातला तुमचा आवडता क्षण आईसोबत आठवा." }
+      },
+      "routine": [
+        { "taskKey": "rt_meditate", "titleMr": "ध्यान", "deepLink": "app://calm/meditation" },
+        { "taskKey": "rt_water", "titleMr": "पाणी प्या", "target": 8, "deepLink": "app://tracker/water" },
+        { "taskKey": "rt_gratitude", "titleMr": "कृतज्ञता नोंद", "deepLink": "app://journal" },
+        { "taskKey": "rt_samvad", "titleMr": "गर्भसंवाद", "deepLink": "app://samvad/today" }
+      ]
+    },
+    {
+      "id": "day_t1_029", "stage": "t1", "dayIndex": 29, "titleMr": "दिवस २९", "disclaimerMr": "ही माहिती सर्वसाधारण आहे. कृपया तुमच्या डॉक्टरांचा सल्ला घ्या.",
+      "slots": {
+        "affirmation": { "id": "aff_t1_029", "type": "affirmation", "stage": "t1", "lang": "mr", "bodyMr": "मी पुढच्या प्रत्येक दिवसाचं प्रेमाने स्वागत करते." },
+        "garbhSamvad": { "id": "gs_t1_029", "type": "garbh_samvad", "stage": "t1", "lang": "mr", "titleMr": "उद्याचं स्वागत", "audioDurationSec": 180, "bodyMr": "बाळा, उद्याचा दिवसही आपण एकत्र, प्रेमाने जगू." },
+        "meditation": { "id": "med_t1_029", "type": "meditation", "stage": "t1", "lang": "mr", "audioDurationSec": 240, "bodyMr": "शांत, स्थिर श्वसन.", "tags": ["breathing"] },
+        "tip": { "id": "tip_t1_029", "type": "tip", "stage": "t1", "lang": "mr", "bodyMr": "उद्यासाठी एक छोटी सकारात्मक गोष्ट ठरवा.", "tags": ["wellbeing"] },
+        "partnerTask": { "id": "pt_029", "type": "partner_task", "stage": "t1", "lang": "mr", "bodyMr": "आज उद्याच्या दिवसाचं एकत्र छोटं नियोजन करा." }
+      },
+      "routine": [
+        { "taskKey": "rt_breathe", "titleMr": "श्वसन", "deepLink": "app://calm/breathing" },
+        { "taskKey": "rt_water", "titleMr": "पाणी प्या", "target": 8, "deepLink": "app://tracker/water" },
+        { "taskKey": "rt_journal", "titleMr": "नोंद", "deepLink": "app://journal" },
+        { "taskKey": "rt_samvad", "titleMr": "गर्भसंवाद", "deepLink": "app://samvad/today" }
+      ]
+    },
+    {
+      "id": "day_t1_030", "stage": "t1", "dayIndex": 30, "titleMr": "दिवस ३०", "disclaimerMr": "ही माहिती सर्वसाधारण आहे. कृपया तुमच्या डॉक्टरांचा सल्ला घ्या.",
+      "slots": {
+        "affirmation": { "id": "aff_t1_030", "type": "affirmation", "stage": "t1", "lang": "mr", "bodyMr": "हा प्रवास सुंदर आहे, आणि मी त्यासाठी कृतज्ञ आहे." },
+        "garbhSamvad": { "id": "gs_t1_030", "type": "garbh_samvad", "stage": "t1", "lang": "mr", "titleMr": "वाढते प्रेम", "audioDurationSec": 240, "bodyMr": "बाळा, हे ३० दिवस तुझ्यासोबत खूप सुंदर गेले. आपलं प्रेम रोज वाढत आहे." },
+        "meditation": { "id": "med_t1_030", "type": "meditation", "stage": "t1", "lang": "mr", "audioDurationSec": 300, "bodyMr": "संपूर्ण महिन्यासाठी कृतज्ञता ध्यान.", "tags": ["gratitude"] },
+        "tip": { "id": "tip_t1_030", "type": "tip", "stage": "t1", "lang": "mr", "bodyMr": "स्वतःचं मनापासून कौतुक करा; तुम्ही छान करत आहात. आरोग्यविषयक बाबीसाठी डॉक्टरांचा सल्ला घ्या.", "tags": ["wellbeing"] },
+        "partnerTask": { "id": "pt_030", "type": "partner_task", "stage": "t1", "lang": "mr", "bodyMr": "आज दोघं मिळून या महिन्याचा आनंद साजरा करा आणि पुढच्या प्रवासासाठी एकमेकांना आधार द्या." }
+      },
+      "routine": [
+        { "taskKey": "rt_meditate", "titleMr": "ध्यान", "deepLink": "app://calm/meditation" },
+        { "taskKey": "rt_water", "titleMr": "पाणी प्या", "target": 8, "deepLink": "app://tracker/water" },
+        { "taskKey": "rt_gratitude", "titleMr": "कृतज्ञता नोंद", "deepLink": "app://journal" },
+        { "taskKey": "rt_samvad", "titleMr": "गर्भसंवाद", "deepLink": "app://samvad/today" }
+      ]
+    }
+  ]
+}

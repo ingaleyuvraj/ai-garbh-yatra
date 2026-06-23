@@ -1,0 +1,110 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Garbhyatra Content Ingestion Schema",
+  "description": "Schema for ingesting Marathi Garbhsanskar content (days, content items, weekly summaries). All user-facing text is Marathi (lang=mr).",
+  "type": "object",
+  "properties": {
+    "version": { "type": "string", "description": "Content bundle version" },
+    "lang": { "type": "string", "enum": ["mr"], "default": "mr" },
+    "disclaimer": {
+      "type": "string",
+      "description": "Standard doctor disclaimer shown on health-adjacent screens",
+      "default": "ही माहिती सर्वसाधारण आहे. कृपया तुमच्या डॉक्टरांचा सल्ला घ्या."
+    },
+    "contentItems": {
+      "type": "array",
+      "items": { "$ref": "#/definitions/contentItem" }
+    },
+    "days": {
+      "type": "array",
+      "items": { "$ref": "#/definitions/dayPlan" }
+    },
+    "weeklySummaries": {
+      "type": "array",
+      "items": { "$ref": "#/definitions/weeklySummary" }
+    }
+  },
+  "required": ["version", "lang", "days"],
+  "definitions": {
+    "stage": { "type": "string", "enum": ["planning", "t1", "t2", "t3"] },
+    "contentType": {
+      "type": "string",
+      "enum": ["affirmation", "garbh_samvad", "meditation", "mantra", "music", "tip", "partner_task", "routine_task"]
+    },
+    "status": { "type": "string", "enum": ["draft", "in_review", "approved", "published", "archived"] },
+    "contentItem": {
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "type": { "$ref": "#/definitions/contentType" },
+        "stage": { "$ref": "#/definitions/stage" },
+        "lang": { "type": "string", "default": "mr" },
+        "titleMr": { "type": "string" },
+        "bodyMr": { "type": "string", "description": "Script / affirmation / tip text in Marathi" },
+        "meaningMr": { "type": "string", "description": "Meaning for mantra (optional)" },
+        "audioUrl": { "type": ["string", "null"] },
+        "audioDurationSec": { "type": ["integer", "null"] },
+        "imageUrl": { "type": ["string", "null"] },
+        "isPremium": { "type": "boolean", "default": false },
+        "isOfflineEligible": { "type": "boolean", "default": true },
+        "week": { "type": ["integer", "null"] },
+        "dayIndex": { "type": ["integer", "null"] },
+        "tags": { "type": "array", "items": { "type": "string" } },
+        "status": { "$ref": "#/definitions/status" },
+        "version": { "type": "integer", "default": 1 },
+        "reviewedBy": { "type": ["string", "null"] },
+        "reviewDate": { "type": ["string", "null"], "format": "date" }
+      },
+      "required": ["id", "type", "stage", "lang"]
+    },
+    "routineTask": {
+      "type": "object",
+      "properties": {
+        "taskKey": { "type": "string" },
+        "titleMr": { "type": "string" },
+        "target": { "type": ["integer", "null"] },
+        "deepLink": { "type": ["string", "null"] }
+      },
+      "required": ["taskKey", "titleMr"]
+    },
+    "dayPlan": {
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "stage": { "$ref": "#/definitions/stage" },
+        "dayIndex": { "type": "integer" },
+        "titleMr": { "type": "string" },
+        "disclaimerMr": { "type": "string" },
+        "slots": {
+          "type": "object",
+          "properties": {
+            "affirmation": { "$ref": "#/definitions/contentItem" },
+            "garbhSamvad": { "$ref": "#/definitions/contentItem" },
+            "meditation": { "$ref": "#/definitions/contentItem" },
+            "audio": { "$ref": "#/definitions/contentItem" },
+            "tip": { "$ref": "#/definitions/contentItem" },
+            "partnerTask": { "$ref": "#/definitions/contentItem" }
+          }
+        },
+        "routine": { "type": "array", "items": { "$ref": "#/definitions/routineTask" } }
+      },
+      "required": ["id", "stage", "dayIndex", "disclaimerMr", "slots"]
+    },
+    "weeklySummary": {
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "stage": { "$ref": "#/definitions/stage" },
+        "week": { "type": "integer" },
+        "babySummaryMr": { "type": "string" },
+        "sizeCompareMr": { "type": "string" },
+        "motherChangesMr": { "type": "string" },
+        "disclaimerMr": { "type": "string" },
+        "status": { "$ref": "#/definitions/status" },
+        "reviewedBy": { "type": ["string", "null"] },
+        "reviewDate": { "type": ["string", "null"], "format": "date" }
+      },
+      "required": ["id", "stage", "week", "disclaimerMr"]
+    }
+  }
+}

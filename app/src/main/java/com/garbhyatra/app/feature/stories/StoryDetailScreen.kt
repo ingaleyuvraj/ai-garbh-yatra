@@ -1,0 +1,99 @@
+package com.garbhyatra.app.feature.stories
+
+import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.verticalScroll
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.automirrored.filled.ArrowBack
+import androidx.compose.material3.ExperimentalMaterial3Api
+import androidx.compose.material3.Icon
+import androidx.compose.material3.IconButton
+import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.Scaffold
+import androidx.compose.material3.Text
+import androidx.compose.material3.TopAppBar
+import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.unit.dp
+import com.garbhyatra.app.R
+import com.garbhyatra.app.data.content.Story
+import com.garbhyatra.app.di.AppContainer
+import com.garbhyatra.app.ui.components.SectionHeader
+import com.garbhyatra.app.ui.components.SoftCard
+
+@OptIn(ExperimentalMaterial3Api::class)
+@Composable
+fun StoryDetailScreen(
+    container: AppContainer,
+    storyId: String,
+    onBack: () -> Unit
+) {
+    var story by remember { mutableStateOf<Story?>(null) }
+    LaunchedEffect(storyId) { story = container.contentRepository.storyById(storyId) }
+
+    Scaffold(
+        topBar = {
+            TopAppBar(
+                title = { Text(story?.titleMr ?: stringResource(R.string.stories_title)) },
+                navigationIcon = {
+                    IconButton(onClick = onBack) {
+                        Icon(Icons.AutoMirrored.Filled.ArrowBack, contentDescription = null)
+                    }
+                }
+            )
+        }
+    ) { innerPadding ->
+        val current = story
+        Column(
+            modifier = Modifier
+                .fillMaxSize()
+                .verticalScroll(rememberScrollState())
+                .padding(innerPadding)
+                .padding(16.dp),
+            verticalArrangement = Arrangement.spacedBy(14.dp)
+        ) {
+            if (current == null) return@Column
+
+            if (current.summaryMr.isNotBlank()) {
+                Text(
+                    current.summaryMr,
+                    style = MaterialTheme.typography.bodyLarge,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant
+                )
+            }
+
+            current.sections.forEachIndexed { index, section ->
+                SoftCard {
+                    Text(
+                        stringResource(R.string.story_section, index + 1),
+                        style = MaterialTheme.typography.labelLarge,
+                        color = MaterialTheme.colorScheme.primary,
+                        fontWeight = FontWeight.SemiBold
+                    )
+                    SectionHeader(section.titleMr)
+                    Text(section.bodyMr, style = MaterialTheme.typography.bodyLarge)
+                    section.moralMr?.takeIf { it.isNotBlank() }?.let { moral ->
+                        SoftCard(containerColor = MaterialTheme.colorScheme.primaryContainer) {
+                            Text(
+                                "🌟 " + stringResource(R.string.story_moral),
+                                style = MaterialTheme.typography.titleSmall,
+                                fontWeight = FontWeight.Bold
+                            )
+                            Text(moral, style = MaterialTheme.typography.bodyMedium)
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
